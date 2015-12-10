@@ -1,0 +1,8 @@
+approxdata              approximate data based on the models as derived
+                        with function getmodel
+ctsky-package           a package to model radio astronomy data
+getmodel                derive models from data
+getvis                  generate visualisation from the data as store
+                        these in a pdf
+studyshell              shell function for studying the data
+testcompr               test data compression
