@@ -97,6 +97,8 @@ for cfhtls_file in os.listdir(os.getcwd()):
             # Only update the bookkeeping if the time series were long enough for all colours.
             if number_of_colours_that_show_variability + number_of_colours_that_do_not_show_variability == frequency_indices.size:
                 number_of_time_series += frequency_indices.size
+
+                # A source is only considered varaiable if it is shown in all colours.
                 if number_of_colours_that_show_variability == frequency_indices.size:
                     number_of_variable_time_series += number_of_colours_that_show_variability
                 else:
