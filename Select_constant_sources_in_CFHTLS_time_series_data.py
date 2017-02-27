@@ -60,9 +60,6 @@ for cfhtls_file in os.listdir(os.getcwd()):
                 if errors.size >= minimal_number_of_timestamps:
                     magnitudes          = magnitudes[allowed_indices]
 
-                    # Add a 5 sigma "outburst" and check if it is "detected".
-                    # magnitudes[50:355] += 500
-
                     weights = 1/errors**2
 
                     weighted_mean, sum_of_weights = np.average(magnitudes, weights = weights, returned=True)
@@ -76,7 +73,6 @@ for cfhtls_file in os.listdir(os.getcwd()):
                     probability_of_constancy = 1 - chi2.cdf(manually_calculated_chi_squared_using_errors, magnitudes.size -1)
 
                     # probability_of_constancy     = ts.adfuller(scaled_residuals, maxlag = magnitudes.size -2, autolag = 'AIC')[1]
-                    # probability_of_variability = ts.adfuller(magnitudes, autolag = 't-stat')[1]
                     # probability_of_constancy = jb(scaled_residuals)[1]
                     # ljung_box_output             = acorr_ljungbox(scaled_residuals)
                     # probability_of_constancy   = ljung_box_output[1][-1]
