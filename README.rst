@@ -10,6 +10,7 @@ Guidance:
 - Select_constant_sources_in_CFHTLS_time_series_data.py is a Python 3 script.
 - Replace '/home/hspreeuw/Dropbox/eScienceCenter/CWI/terse' in the os.chdir(''/home/hspreeuw/Dropbox/eScienceCenter/CWI/terse')
   to where you unpacked http://www.cadc-ccda.hia-iha.nrc-cnrc.gc.ca/data/pub/CFHTSG/DeepVarTerse.tar.gz.
+- Check http://www.cadc-ccda.hia-iha.nrc-cnrc.gc.ca/en/megapipe/cfhtls/dfspt.html for information on the data.
 - Select the statistical test that you would like to try by commenting out or uncommenting probability_of_constancy.
 - Commenting out
                 # magnitudes  = np.random.normal(12, 1, times.size)
