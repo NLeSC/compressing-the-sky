@@ -104,8 +104,6 @@ for cfhtls_file in os.listdir(os.getcwd()):
                 else:
                     number_of_constant_time_series += number_of_colours_that_show_variability
 
-                # number_of_variable_time_series     += number_of_colours_that_show_variability
-                #
                 number_of_constant_time_series     += number_of_colours_that_do_not_show_variability
 
             #                 pyl.savefig(path_to_plots + 'time_series_' + str(number_of_variable_sources) + '.png', bbbox_inches = 'tight')
