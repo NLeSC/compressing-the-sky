@@ -1,3 +1,6 @@
+.. image:: https://zenodo.org/badge/47755645.svg
+   :target: https://zenodo.org/badge/latestdoi/47755645
+
 Compressing the Sky
 ====================
 
